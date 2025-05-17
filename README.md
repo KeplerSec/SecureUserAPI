@@ -19,3 +19,4 @@ npm install
 node-gyp configure
 node-gyp build
 node server.js
+node test.js
