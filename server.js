@@ -5,7 +5,7 @@ const addon = require('./build/Release/cryptoAddon');
 const app = express();
 app.use(express.json());
 
-mongoose.connect('mongodb+srv://kepler:kepler69.@cluster0.akdya80.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
+mongoose.connect('mongodb-connection');
 const User = mongoose.model('User', new mongoose.Schema({
   email: String,
   passwordHash: String // Haché via C++
